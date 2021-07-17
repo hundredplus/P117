@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-u$41l+v7#)7p2)j#otr!vrk*$mvd3k%mtbsrd83ql_o!931uch
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['13.236.60.132']
 
 
 # Application definition
@@ -76,10 +76,10 @@ WSGI_APPLICATION = 'P117.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'p117',
+        'NAME': 'dbp117',
         'USER': 'root',
         'PASSWORD': 'Duc11111',
-        'HOST': 'localhost',
+        'HOST': 'ls-76f6939e74d511aadc9700a932b43a66a7382670.cfprg9sknks1.ap-southeast-2.rds.amazonaws.com',
         'PORT': '3306'
     }
 }
