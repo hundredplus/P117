@@ -79,7 +79,7 @@ DATABASES = {
         'NAME': 'dbp117',
         'USER': 'root',
         'PASSWORD': 'Duc11111',
-        'HOST': 'ls-76f6939e74d511aadc9700a932b43a66a7382670.cfprg9sknks1.ap-southeast-2.rds.amazonaws.com',
+        'HOST': '/opt/bitnami/mariadb/tmp/mysql.sock',
         'PORT': '3306'
     }
 }
