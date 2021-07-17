@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-u$41l+v7#)7p2)j#otr!vrk*$mvd3k%mtbsrd83ql_o!931uch'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['13.236.60.132']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -79,7 +79,7 @@ DATABASES = {
         'NAME': 'dbp117',
         'USER': 'root',
         'PASSWORD': 'Duc11111',
-        'HOST': 'ls-76f6939e74d511aadc9700a932b43a66a7382670.cfprg9sknks1.ap-southeast-2.rds.amazonaws.com',
+        'HOST': '/opt/bitnami/mariadb/tmp/mysql.sock',
         'PORT': '3306'
     }
 }
@@ -122,6 +122,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
